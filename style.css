@@ -24,6 +24,18 @@ h1 {
 h2 {
     font-size: 1.8rem;
 }
+.mb-1 {
+    margin-bottom: 1rem;
+}
+/* .q0-label {
+
+} */
+/* .q0-input-wrap:nth-child(0) {
+    margin-bottom: 2rem;
+} */
+.company-name {
+    width: 100%;
+}
 .step-subtitle {
     font-size: 1.6rem;
     margin-bottom: 1rem;
