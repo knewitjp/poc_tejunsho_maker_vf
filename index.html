@@ -31,7 +31,7 @@
                 </div>
             </div>
             <hr class="border">
-            <div class="q q-99">
+            <!-- <div class="q q-99">
                 <p>運行の種類</p>
                 <div>
                     <input type="radio" id="tsumikomi" name="q99n1" value="積み込み" checked>
@@ -42,51 +42,30 @@
                     <input type="radio" id="nioroshi" name="q99n1" value="荷下ろし">
                     <label for="q99n2">荷下ろし（納品）</label>
                 </div>
-            </div>
+            </div> -->
             <br>
             <!-- QUESTION: 1 -->
             <div class="q q-1">
                 <h2>STEP 1</h2>
-                <p class="step-subtitle">場外待機</p>
+                <p class="step-subtitle">駐車</p>
                 <span class="abc">A.</span>
                 <select name="q1n1">
-                    <option value="" disabled selected hidden>待機場所</option>
-                    <option value="隣接する駐車場">隣接する駐車場</option>
-                    <option value="門の横">門の横</option>
-                    <option value="近くの道路">近くの道路</option>
-                    <option value="安全な場所（指定なし）">安全な場所（指定なし）</option>
+                    <!-- <option value="" disabled selected hidden>駐車場所</option> -->
+                    <option value="路上" selected>路上</option>
+                    <option value="トラック専用駐車場">トラック専用駐車場</option>
+                    <option value="一般車両と同じ場所">一般車両と同じ場所</option>
+                    <option value="裏口の前">裏口の前</option>
                     <option value="input-text">直接入力</option>
                 </select>
-                で
-                <!-- <br>
-                <span class="abc">B.</span>
-                <select name="q1n2">
-                    <option value="" disabled selected hidden>時間</option>
-                    <option value="守衛があくまで">守衛があくまで</option>
-                    <option value="前の車両がいなくなるまで">前の車両がいなくなるまで</option>
-                    <option value="input-text">直接入力</option>
-                </select>
+                に
                 <br>
-                <span class="abc">C.</span>
-                <select name="q1n3">
-                    <option value="" disabled selected hidden>状態</option>
-                    <option value="エンジンを切って">エンジンを切って</option>
-                    <option value="エンジンを切らずに">エンジンを切らずに</option>
-                    <option value="input-text">直接入力</option>
-                </select> -->
-                待機
+                駐車する
                 <div class="dotted"></div>
                 <div class="manual-input">
                     <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
                     <div class="manual-input-item">
                         <label for="">A. </label><input type="text" name="q1n1m" placeholder="ここに直接入力">
                     </div>
-                    <!-- <div class="manual-input-item">
-                        <label for="">B. </label><input type="text" name="q1n2m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">C. </label><input type="text" name="q1n3m" placeholder="ここに直接入力">
-                    </div> -->
                 </div>
                 <div class="note-wrap">
                     <label for="note1">補足説明（任意）</label>
@@ -97,75 +76,22 @@
 
             <div class="q q-2">
                 <h2>STEP 2</h2>
-                <p class="step-subtitle">入門許可・入場</p>
+                <p class="step-subtitle">解錠</p>
                 <span class="abc">A.</span>
                 <select name="q2n1">
-                    <option value="" disabled selected hidden>場所</option>
-                    <option value="守衛詰所">守衛詰所</option>
-                    <option value="事務所">事務所</option>
-                    <option value="無人の受付">無人の受付</option>
+                    <option selected value="カードキーで">カードキーで</option>
+                    <option value="持参の鍵で">持参の鍵で</option>
+                    <option value="守衛にある鍵で">守衛にある鍵で</option>
+                    <option value="守衛に頼み">守衛に頼み</option>
+                    <option value="解錠不要">解錠不要</option>
                     <option value="input-text">直接入力</option>
                 </select>
-                で
-                <br>
-                <span class="abc">B.</span>
-                <select name="q2n2">
-                    <option value="" disabled selected hidden>声かけ</option>
-                    <option value="守衛と会話して">守衛と会話して</option>
-                    <option value="担当者と会話して">担当者と会話して</option>
-                    <option value="">該当なし（人と話さない）</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                <br>
-                <span class="abc">C.</span>
-                <select name="q2n3">
-                    <option value="" disabled selected hidden>モノ</option>
-                    <option value="入門許可証">入門許可証</option>
-                    <option value="引き取り表">引き取り表</option>
-                    <option value="入門証と引き取り表">入門証と引き取り表</option>
-                    <option value="通行証">通行証</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                を提示して
-                <br>
-                <span class="abc">D.</span>
-                <select name="q2n4">
-                    <option value="" disabled selected hidden>台帳記入 / カードリーダー</option>
-                    <option value="台帳を記入して">台帳を記入して</option>
-                    <option value="ICカードリーダーにかざして">ICカードリーダーにかざして</option>
-                    <option value="">該当なし</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                <br>
-                入門許可を取得。そして
-                <br>
-                <span class="abc">E.</span>
-                <select name="q2n5">
-                    <option value="" disabled selected hidden>場所</option>
-                    <option value="正門">正門</option>
-                    <option value="南門">南門</option>
-                    <option value="正面入り口">正面入り口</option>
-                    <option value="裏門">裏門</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                から入場
+                解錠をする
                 <div class="dotted"></div>
                 <div class="manual-input">
                     <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
                     <div class="manual-input-item">
                         <label for="">A. </label><input type="text" name="q2n1m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">B. </label><input type="text" name="q2n2m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">C. </label><input type="text" name="q2n3m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">D. </label><input type="text" name="q2n4m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">E. </label><input type="text" name="q2n5m" placeholder="ここに直接入力">
                     </div>
                 </div>
                 <div class="note-wrap">
@@ -174,109 +100,21 @@
                 </div>
                 <hr class="border">
             </div>
-            <!-- <div class="q q-3">
-                <h2>STEP 3</h2>
-                <p class="step-subtitle">入場</p>
-                <span class="abc">A.</span>
-                <select name="q3n1">
-                    <option value="" disabled selected hidden>場所</option>
-                    <option value="正門">正門</option>
-                    <option value="南門">南門</option>
-                    <option value="正面入り口">正面入り口</option>
-                    <option value="裏門">裏門</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                から入場
-                <div class="dotted"></div>
-                <div class="manual-input">
-                    <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
-                    <div class="manual-input-item">
-                        <label for="">A. </label><input type="text" name="q3n1m" placeholder="ここに直接入力">
-                    </div>
-                </div>
-                <div class="note-wrap">
-                    <label for="note3">補足説明（任意）</label>
-                    <textarea name="note3" id="" rows="5"></textarea>
-                </div>
-                <hr class="border">
-            </div> -->
             <div class="q q-3">
                 <h2>STEP 3</h2>
-                <p class="step-subtitle">受付作業</p>
+                <p class="step-subtitle">搬入</p>
                 <span class="abc">A.</span>
                 <select name="q3n1">
-                    <option value="" disabled selected hidden>場所</option>
-                    <option value="事務所の近く">事務所の近く</option>
-                    <option value="指定の駐車場">指定の駐車場</option>
-                    <option value="下ろし場近く">下ろし場近く</option>
-                    <option value="安全な場所（指定なし）">安全な場所（指定なし）</option>
+                    <option selected value="台車を使って">台車を使って</option>
+                    <option value="手で持って">手で持って</option>
                     <option value="input-text">直接入力</option>
                 </select>
-                にトラックを停める。
-                <span class="abc">B.</span>
-                <select name="q3n2">
-                    <option value="" disabled selected hidden>場所</option>
-                    <option value="事務所">事務所</option>
-                    <option value="守衛詰所">守衛詰所</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                で
-                <br>
-                <span class="abc">C.</span>
-                <select name="q3n3">
-                    <option value="" disabled selected hidden>人に声かけ</option>
-                    <option value="事務員と会話して">事務員と会話して</option>
-                    <option value="守衛と会話して">守衛と会話して</option>
-                    <option value="担当者と会話して">担当者と会話して</option>
-                    <option value="">特になし</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                <br>
-                <span class="abc">D.</span>
-                <select name="q3n4">
-                    <option value="" disabled selected hidden>モノ</option>
-                    <option value="入門許可証">入門許可証</option>
-                    <option value="引き取り表">引き取り表</option>
-                    <option value="入門許可証と引き取り表">入門許可証と引き取り表</option>
-                    <option value="通行証">通行証</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                を
-                <span class="abc">E.</span>
-                <select name="q3n5">
-                    <option value="" disabled selected hidden>記入・提示</option>
-                    <option value="記入して">記入して</option>
-                    <option value="提示して">提示して</option>
-                    <option value="確認して">確認して</option>
-                    <option value="指定の場所に置いて">指定の場所に置いて</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                <br>
-                <!-- <span class="abc">D.</span>
-                <select name="q9n4">
-                    <option value="" disabled selected hidden>モノ</option>
-                    <option value="台帳を記入して">台帳を記入して</option>
-                    <option value="ICカードリーダーにかざして">ICカードリーダーにかざして</option>
-                    <option value="input-text">直接入力</option>
-                </select> -->
-                受付を完了
+                搬入
                 <div class="dotted"></div>
                 <div class="manual-input">
                     <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
                     <div class="manual-input-item">
                         <label for="">A. </label><input type="text" name="q3n1m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">B. </label><input type="text" name="q3n2m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">C. </label><input type="text" name="q3n3m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">D. </label><input type="text" name="q3n4m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">E. </label><input type="text" name="q3n5m" placeholder="ここに直接入力">
                     </div>
                 </div>
                 <div class="note-wrap">
@@ -285,66 +123,24 @@
                 </div>
                 <hr class="border">
             </div>
-
-            <!-- <div class="q q-3">
-                <h2>STEP 3</h2>
-                <p class="step-subtitle">受付作業</p>
-                <span class="abc">A.</span>
-                <select name="q3n1">
-                    <option value="" disabled selected hidden>場所</option>
-                    <option value="待機場">待機場</option>
-                    <option value="積み下ろしヤード">積み下ろしヤード</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                へ
-                <br>
-                <span class="abc">B.</span>
-                <select name="q3n2">
-                    <option value="" disabled selected hidden>速度</option>
-                    <option value="標準の速度">標準の速度</option>
-                    <option value="（仮）徐行">（仮）徐行</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                で走行
-                <div class="dotted"></div>
-                <div class="manual-input">
-                    <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
-                    <div class="manual-input-item">
-                        <label for="">A. </label><input type="text" name="q4n1m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">B. </label><input type="text" name="q4n2m" placeholder="ここに直接入力">
-                    </div>
-                </div>
-                <div class="note-wrap">
-                    <label for="note4">補足説明（任意）</label>
-                    <textarea name="note4" id="" rows="5"></textarea>
-                </div>
-                <hr class="border">
-            </div> -->
             <div class="q q-4">
                 <h2>STEP 4</h2>
-                <p class="step-subtitle">場内待機</p>
+                <p class="step-subtitle">荷下ろし</p>
                 <span class="abc">A.</span>
                 <select name="q4n1">
-                    <option value="" disabled selected hidden>場所</option>
-                    <option value="下ろし場の横">下ろし場の横</option>
-                    <option value="付近の駐車スペース">付近の駐車スペース</option>
-                    <option value="隣接する駐車場">隣接する駐車場</option>
-                    <option value="門の横">門の横</option>
+                    <option selected value="棚まで陳列して">棚まで陳列して</option>
+                    <option value="パントリー入口まで">パントリー入口まで</option>
                     <option value="input-text">直接入力</option>
                 </select>
-                で
                 <br>
                 <span class="abc">B.</span>
                 <select name="q4n2">
-                    <option value="" disabled selected hidden>時間</option>
-                    <option value="前の車両がいなくなるまで">前の車両がいなくなるまで</option>
-                    <option value="担当者の指示があるまで">担当者の指示があるまで</option>
+                    <option selected value="ドライバーだけで">ドライバーだけで</option>
+                    <option value="客先担当者と一緒に">客先担当者と一緒に</option>
                     <option value="input-text">直接入力</option>
                 </select>
                 <br>
-                待機
+                荷下ろし
                 <div class="dotted"></div>
                 <div class="manual-input">
                     <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
@@ -363,23 +159,23 @@
             </div>
             <div class="q q-5">
                 <h2>STEP 5</h2>
-                <p class="step-subtitle">ヤード入庫</p>
+                <p class="step-subtitle">検品</p>
                 <span class="abc">A.</span>
                 <select name="q5n1">
-                    <option value="" disabled selected hidden>入庫のタイミング</option>
-                    <option value="受け入れ担当者の指示で">受け入れ担当者の指示で</option>
-                    <option value="前の車両がいなくなったら">前の車両がいなくなったら</option>
+                    <option selected value="ドライバーだけで">ドライバーだけで</option>
+                    <option value="客先担当者と一緒に">客先担当者と一緒に</option>
                     <option value="input-text">直接入力</option>
                 </select>
                 <br>
                 <span class="abc">B.</span>
                 <select name="q5n2">
-                    <option value="" disabled selected hidden>バック / フロント</option>
-                    <option value="バック">バック</option>
-                    <option value="フロント">フロント</option>
+                    <option selected value="目視で">目視で</option>
+                    <option value="バーコードリーダーで">バーコードリーダーで</option>
+                    <option value="読み合わせで">読み合わせで</option>
                     <option value="input-text">直接入力</option>
                 </select>
-                で入庫
+                <br>
+                検品実施
                 <div class="dotted"></div>
                 <div class="manual-input">
                     <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
@@ -398,46 +194,21 @@
             </div>
             <div class="q q-6">
                 <h2>STEP 6</h2>
-                <p class="step-subtitle">荷下ろし・積み込み</p>
+                <p class="step-subtitle">伝票</p>
                 <span class="abc">A.</span>
                 <select name="q6n1">
-                    <option value="" disabled selected hidden>指示</option>
-                    <option value="受け入れ担当者の指示で">受け入れ担当者の指示で</option>
+                    <option selected value="カゴ">カゴ</option>
+                    <option selected value="机の上">机の上</option>
+                    <option selected value="ボックス">ボックス</option>
+                    <option selected value="担当者">担当者</option>
                     <option value="input-text">直接入力</option>
                 </select>
-                <br>
-                <span class="abc">B.</span>
-                <select name="q6n2">
-                    <option value="" disabled selected hidden>荷渡条件</option>
-                    <option value="車上渡し">車上渡し</option>
-                    <option value="置き場渡し">置き場渡し</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                で
-                <br>
-                <span class="abc">C.</span>
-                <select name="q6n3">
-                    <option value="" disabled selected hidden>作業</option>
-                    <option value="クレーン">クレーン</option>
-                    <option value="フォークリフト">フォークリフト</option>
-                    <option value="手下ろし">手下ろし</option>
-                    <option value="手積み">手積み</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                で
-                <br>
-                荷下ろし（積み込み）を行う
+                に伝票を出す
                 <div class="dotted"></div>
                 <div class="manual-input">
                     <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
                     <div class="manual-input-item">
                         <label for="">A. </label><input type="text" name="q6n1m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">B. </label><input type="text" name="q6n2m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">C. </label><input type="text" name="q6n3m" placeholder="ここに直接入力">
                     </div>
                 </div>
                 <div class="note-wrap">
@@ -448,32 +219,21 @@
             </div>
             <div class="q q-7">
                 <h2>STEP 7</h2>
-                <p class="step-subtitle">ヤード退庫</p>
-                <!-- <span class="abc">A.</span>
-                <select name="q7n1">
-                    <option value="" disabled selected hidden>人・時間</option>
-                    <option value="受け入れ担当者の指示で">受け入れ担当者の指示で</option>
-                    <option value="時間になれば">時間になれば</option>
-                    <option value="input-text">直接入力</option>
-                </select> -->
-                <!-- <br> -->
+                <p class="step-subtitle">回収</p>
+                空きパレットを
+                <br>
                 <span class="abc">A.</span>
                 <select name="q7n1">
-                    <option value="" disabled selected hidden>バック / フロント</option>
-                    <option value="バック">バック</option>
-                    <option value="フロント">フロント</option>
+                    <option value="回収する">回収する</option>
+                    <option value="回収しない">回収しない</option>
                     <option value="input-text">直接入力</option>
                 </select>
-                で退庫
                 <div class="dotted"></div>
                 <div class="manual-input">
                     <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
                     <div class="manual-input-item">
                         <label for="">A. </label><input type="text" name="q7n1m" placeholder="ここに直接入力">
                     </div>
-                    <!-- <div class="manual-input-item">
-                        <label for="">B. </label><input type="text" name="q7n2m" placeholder="ここに直接入力">
-                    </div> -->
                 </div>
                 <div class="note-wrap">
                     <label for="note7">補足説明（任意）</label>
@@ -483,99 +243,24 @@
             </div>
             <div class="q q-8">
                 <h2>STEP 8</h2>
-                <p class="step-subtitle">受付作業</p>
+                <p class="step-subtitle">退去</p>
                 <span class="abc">A.</span>
                 <select name="q8n1">
-                    <option value="" disabled selected hidden>場所</option>
-                    <option value="事務所">事務所</option>
-                    <option value="守衛詰所">守衛詰所</option>
+                    <option selected value="裏口">裏口</option>
+                    <option value="表口">表口</option>
                     <option value="input-text">直接入力</option>
                 </select>
-                で
-                <br>
-                <span class="abc">B.</span>
-                <select name="q8n2">
-                    <option value="" disabled selected hidden>声かけ</option>
-                    <!-- <option value="守衛">守衛</option> -->
-                    <option value="事務員と会話して">事務員と会話して</option>
-                    <option value="担当者と会話して">担当者と会話して</option>
-                    <option value="">特になし（会話しない）</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                <br>
-                <span class="abc">C.</span>
-                <select name="q8n3">
-                    <option value="" disabled selected hidden>モノ</option>
-                    <option value="入門許可証">入門許可証</option>
-                    <option value="引き取り表">引き取り表</option>
-                    <option value="入門許可証と引き取り表">入門許可証と引き取り表</option>
-                    <option value="通行証">通行証</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                を
-                <span class="abc">D.</span>
-                <select name="q8n4">
-                    <option value="" disabled selected hidden>記入・提示</option>
-                    <option value="記入して">記入して</option>
-                    <option value="提示して">提示して</option>
-                    <option value="確認して">確認して</option>
-                    <option value="指定の場所に置いて">指定の場所に置いて</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                <br>
-                <!-- <span class="abc">D.</span>
-                <select name="q8n4">
-                    <option value="" disabled selected hidden>モノ</option>
-                    <option value="台帳を記入して">台帳を記入して</option>
-                    <option value="ICカードリーダーにかざして">ICカードリーダーにかざして</option>
-                    <option value="input-text">直接入力</option>
-                </select> -->
-                受付を完了
+                から退去
                 <div class="dotted"></div>
                 <div class="manual-input">
                     <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
                     <div class="manual-input-item">
                         <label for="">A. </label><input type="text" name="q8n1m" placeholder="ここに直接入力">
                     </div>
-                    <div class="manual-input-item">
-                        <label for="">B. </label><input type="text" name="q8n2m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">C. </label><input type="text" name="q8n3m" placeholder="ここに直接入力">
-                    </div>
-                    <div class="manual-input-item">
-                        <label for="">D. </label><input type="text" name="q8n4m" placeholder="ここに直接入力">
-                    </div>
                 </div>
                 <div class="note-wrap">
                     <label for="note8">補足説明（任意）</label>
                     <textarea name="note8" id="" rows="5"></textarea>
-                </div>
-                <hr class="border">
-            </div>
-            <div class="q q-9">
-                <h2>STEP 9</h2>
-                <p class="step-subtitle">退去</p>
-                <span class="abc">A.</span>
-                <select name="q9n1">
-                    <option value="" disabled selected hidden>門</option>
-                    <option value="正門">正門</option>
-                    <option value="南門">南門</option>
-                    <option value="正面入り口">正面入り口</option>
-                    <option value="裏門">裏門</option>
-                    <option value="input-text">直接入力</option>
-                </select>
-                から退場
-                <div class="dotted"></div>
-                <div class="manual-input">
-                    <div class="manual-input-text">選択肢に該当するものがない場合は下に入力</div>
-                    <div class="manual-input-item">
-                        <label for="">A. </label><input type="text" name="q9n1m" placeholder="ここに直接入力">
-                    </div>
-                </div>
-                <div class="note-wrap">
-                    <label for="note9">補足説明（任意）</label>
-                    <textarea name="note9" id="" rows="5"></textarea>
                 </div>
                 <hr class="border">
             </div>
